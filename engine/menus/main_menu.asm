@@ -179,13 +179,13 @@ SpecialEnterMap::
 	jp EnterMap
 
 ContinueText:
-	db "CONTINUE"
+	db "DOORGAAN"
 	next ""
 	; fallthrough
 
 NewGameText:
-	db   "NEW GAME"
-	next "OPTION@"
+	db   "NIEUW SPEL"
+	next "OPTIES@"
 
 DisplayContinueGameInfo:
 	xor a
@@ -266,10 +266,10 @@ PrintPlayTime:
 	jp PrintNumber
 
 SaveScreenInfoText:
-	db   "PLAYER"
+	db   "SPELER"
 	next "BADGES    "
 	next "#DEX    "
-	next "TIME@"
+	next "TIJD@"
 
 DisplayOptionMenu:
 	callfar DisplayOptionMenu_

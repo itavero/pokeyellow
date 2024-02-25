@@ -79,7 +79,7 @@ OptionsMenu_TextSpeed:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	hlcoord 14, 2
+	hlcoord 13, 2
 	call PlaceString
 	and a
 	ret
@@ -90,11 +90,11 @@ TextSpeedStringsPointerTable:
 	dw SlowText
 
 FastText:
-	db "FAST@"
+	db "SNEL  @"
 MidText:
-	db "MID @"
+	db "GEWOON@"
 SlowText:
-	db "SLOW@"
+	db "TRAAG @"
 
 GetTextSpeed:
 	ld a, [wOptions]
@@ -137,7 +137,7 @@ OptionsMenu_BattleAnimations:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	hlcoord 14, 4
+	hlcoord 13, 4
 	call PlaceString
 	and a
 	ret
@@ -147,9 +147,9 @@ AnimationOptionStringsPointerTable:
 	dw AnimationOffText
 
 AnimationOnText:
-	db "ON @"
+	db "AAN@"
 AnimationOffText:
-	db "OFF@"
+	db "UIT@"
 
 OptionsMenu_BattleStyle:
 	ldh a, [hJoy5]
@@ -173,7 +173,7 @@ OptionsMenu_BattleStyle:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	hlcoord 14, 6
+	hlcoord 13, 6
 	call PlaceString
 	and a
 	ret
@@ -225,7 +225,7 @@ OptionsMenu_SpeakerSettings:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	hlcoord 8, 8
+	hlcoord 10, 8
 	call PlaceString
 	and a
 	ret
@@ -239,11 +239,11 @@ SpeakerOptionStringsPointerTable:
 MonoSoundText:
 	db "MONO     @"
 Earphone1SoundText:
-	db "EARPHONE1@"
+	db "OORDOPJE1@"
 Earphone2SoundText:
-	db "EARPHONE2@"
+	db "OORDOPJE2@"
 Earphone3SoundText:
-	db "EARPHONE3@"
+	db "OORDOPJE3@"
 
 OptionsMenu_GBPrinterBrightness:
 	call Func_41e7b
@@ -281,7 +281,7 @@ OptionsMenu_GBPrinterBrightness:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	hlcoord 8, 10
+	hlcoord 10, 10
 	call PlaceString
 	and a
 	ret
@@ -294,15 +294,15 @@ GBPrinterOptionStringsPointerTable:
 	dw DarkestPrintText
 
 LightestPrintText:
-	db "LIGHTEST@"
+	db "LICHTST @"
 LighterPrintText:
-	db "LIGHTER @"
+	db "LICHTER @"
 NormalPrintText:
-	db "NORMAL  @"
+	db "NORMAAL @"
 DarkerPrintText:
-	db "DARKER  @"
+	db "DONKER  @"
 DarkestPrintText:
-	db "DARKEST @"
+	db "DONKERST@"
 
 Func_41e7b:
 	ld a, [wPrinterSettings]
@@ -433,11 +433,11 @@ InitOptionsMenu:
 	ret
 
 AllOptionsText:
-	db "TEXT SPEED :"
-	next "ANIMATION  :"
-	next "BATTLESTYLE:"
-	next "SOUND:"
-	next "PRINT:@"
+	db   "TEKSTTEMPO:"
+	next "ANIMATIE  :"
+	next "VECHTSTIJL:"
+	next "GELUID:"
+	next "PRINT :@"
 
 OptionMenuCancelText:
-	db "CANCEL@"
+	db "TERUG@"
