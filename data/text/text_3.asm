@@ -1,13 +1,13 @@
 _EnemyAppearedText::
 	text_ram wEnemyMonNick
 	text_start
-	line "appeared!"
+	line "verscheen!"
 	prompt
 
 _TrainerWantsToFightText::
 	text_ram wTrainerName
-	text " wants"
-	line "to fight!"
+	text " wil"
+	line "vechten!"
 	prompt
 
 _UnveiledGhostText::
@@ -22,20 +22,22 @@ _GhostCantBeIDdText::
 	prompt
 
 _GoText::
-	text "Go! @"
+	text "Ik kies jou,"
+	line "@"
 	text_end
 
 _DoItText::
-	text "Do it! @"
+	text "Je kunt het,"
+	line "@"
 	text_end
 
 _GetmText::
-	text "Get'm! @"
+	text "Pak'm! @"
 	text_end
 
 _EnemysWeakText::
-	text "The enemy's weak!"
-	line "Get'm! @"
+	text "Maak het af,"
+	line "@"
 	text_end
 
 _PlayerMon1Text::
@@ -49,7 +51,7 @@ _PlayerMon2Text::
 	text_end
 
 _EnoughText::
-	text "enough!@"
+	text "genoeg!@"
 	text_end
 
 _OKExclamationText::
@@ -57,215 +59,214 @@ _OKExclamationText::
 	text_end
 
 _GoodText::
-	text "good!@"
+	text "goed!@"
 	text_end
 
 _ComeBackText::
 	text_start
-	line "Come back!"
+	line "Kom terug!"
 	done
 
 ; money related
 _PickUpPayDayMoneyText::
-	text "<PLAYER> picked up"
+	text "<PLAYER> verzamelt"
 	line "¥@"
 	text_bcd wTotalPayDayMoney, 3 | LEADING_ZEROES | LEFT_ALIGN
 	text "!"
 	prompt
 
 _ClearSaveDataText::
-	text "Clear all saved"
-	line "data?"
+	text "Alle opgeslagen"
+	line "data wissen?"
 	done
 
 _WhichFloorText::
-	text "Which floor do"
-	line "you want? "
+	text "Kies een"
+	line "verdieping:"
 	done
 
 _SleepingPikachuText1::
-	text "There isn't any"
-	line "response..."
+	text "Er wordt niet"
+	line "gereageerd..."
 	prompt
 
 _PartyMenuNormalText::
-	text "Choose a #MON."
+	text "Kies een #MON."
 	done
 
 _PartyMenuItemUseText::
-	text "Use item on which"
-	line "#MON?"
+	text "Welke #MON wil"
+	line "je dit geven?"
 	done
 
 _PartyMenuBattleText::
-	text "Bring out which"
-	line "#MON?"
+	text "Welke #MON"
+	line "kies je?"
 	done
 
 _PartyMenuUseTMText::
-	text "Teach to which"
-	line "#MON?"
+	text "Wie wil je dit"
+	line "leren?"
 	done
 
 _PartyMenuSwapMonText::
-	text "Move #MON"
-	line "where?"
+	text "Met wie moet de"
+	line "#MON wisselen?"
 	done
 
 _PotionText::
 	text_ram wcd6d
-	text_start
-	line "recovered by @"
+	text " kreeg"
+	line "@"
 	text_decimal wHPBarHPDifference, 2, 3
-	text "!"
+	text " HP!"
 	done
 
 _AntidoteText::
 	text_ram wcd6d
-	text " was"
-	line "cured of poison!"
+	text " is"
+	line "genezen van gif!"
 	done
 
 _ParlyzHealText::
 	text_ram wcd6d
-	text "'s"
-	line "rid of paralysis!"
+	text " is"
+	line "niet meer verlamd"
 	done
 
 _BurnHealText::
-	text_ram wcd6d
-	text "'s"
-	line "burn was healed!"
+	text "De brandwonden"
+	line "zijn genezen!"
 	done
 
 _IceHealText::
 	text_ram wcd6d
-	text " was"
-	line "defrosted!"
+	text " is"
+	line "ontdooid!"
 	done
 
 _AwakeningText::
 	text_ram wcd6d
 	text_start
-	line "woke up!"
+	line "werd wakker!"
 	done
 
 _FullHealText::
 	text_ram wcd6d
-	text "'s"
-	line "health returned!"
+	text " is"
+	line "helemaal gezond!"
 	done
 
 _ReviveText::
 	text_ram wcd6d
 	text_start
-	line "is revitalized!"
+	line "komt bij zinnen"
 	done
 
 _RareCandyText::
 	text_ram wcd6d
-	text " grew"
-	line "to level @"
+	text " steeg"
+	line "naar L@"
 	text_decimal wCurEnemyLVL, 1, 3
 	text "!@"
 	text_end
 
 _TurnedOnPC1Text::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER> zet de PC"
+	line "aan."
 	prompt
 
 _AccessedBillsPCText::
-	text "Accessed BILL's"
-	line "PC."
+	text "Verbonden met de"
+	line "PC van BILL."
 
-	para "Accessed #MON"
-	line "Storage System."
+	para "#MON Opslag"
+	line "Systeem geopend."
 	prompt
 
 _AccessedSomeonesPCText::
-	text "Accessed someone's"
-	line "PC."
+	text "Verbonden met"
+	line "iemand zijn PC."
 
-	para "Accessed #MON"
-	line "Storage System."
+	para "#MON Opslag"
+	line "Systeem geopend."
 	prompt
 
 _AccessedMyPCText::
-	text "Accessed my PC."
+	text "Verbonden met"
+	line "mijn PC."
 
-	para "Accessed Item"
-	line "Storage System."
+	para "Voorwerp Opslag"
+	line "Systeem geopend."
 	prompt
 
 _TurnedOnPC2Text::
-	text "<PLAYER> turned on"
-	line "the PC."
+	text "<PLAYER> zet de PC"
+	line "aan."
 	prompt
 
 _WhatDoYouWantText::
-	text "What do you want"
-	line "to do?"
+	text "Wat wil je doen?"
 	done
 
 _WhatToDepositText::
-	text "What do you want"
-	line "to deposit?"
+	text "Welk voorwerp wil"
+	line "je opbergen?"
 	done
 
 _DepositHowManyText::
-	text "How many?"
+	text "Hoeveel?"
 	done
 
 _ItemWasStoredText::
 	text_ram wcd6d
-	text " was"
-	line "stored via PC."
+	text " is"
+	line "opgeborgen."
 	prompt
 
 _NothingToDepositText::
-	text "You have nothing"
-	line "to deposit."
+	text "Je hebt niets om"
+	line "op te bergen."
 	prompt
 
 _NoRoomToStoreText::
-	text "No room left to"
-	line "store items."
+	text "Je opbergruimte"
+	line "is vol!"
 	prompt
 
 _WhatToWithdrawText::
-	text "What do you want"
-	line "to withdraw?"
+	text "Wat wil je graag"
+	line "terugnemen?"
 	done
 
 _WithdrawHowManyText::
-	text "How many?"
+	text "Hoeveel?"
 	done
 
 _WithdrewItemText::
-	text "Withdrew"
-	line "@"
 	text_ram wcd6d
-	text "."
+	text_start
+	line "teruggenomen."
 	prompt
 
 _NothingStoredText::
-	text "There is nothing"
-	line "stored."
+	text "Je hebt niets"
+	line "opgeborgen."
 	prompt
 
 _CantCarryMoreText::
-	text "You can't carry"
-	line "any more items."
+	text "Je kunt geen"
+	line "extra voorwerpen"
+	cont "dragen."
 	prompt
 
 _WhatToTossText::
-	text "What do you want"
-	line "to toss away?"
+	text "Wat wil je"
+	line "weggooien?"
 	done
 
 _TossHowManyText::
-	text "How many?"
+	text "Hoeveel?"
 	done
 
 _AccessedHoFPCText::
@@ -634,6 +635,6 @@ _ContCharText::
 	text_end
 
 _NoPokemonText::
-	text "There are no"
-	line "#MON here!"
+	text "Er zijn hier"
+	line "geen #MON!"
 	prompt
