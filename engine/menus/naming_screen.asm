@@ -496,13 +496,13 @@ PrintNamingText:
 	jp PlaceString
 
 YourTextString:
-	db "YOUR @"
+	db "JOUW @"
 
 RivalsTextString:
-	db "RIVAL's @"
+	db "RIVAAL @"
 
 NameTextString:
-	db "NAME?@"
+	db "NAAM?@"
 
 NicknameTextString:
-	db "NICKNAME?@"
+	db "BIJNAAM?@"

@@ -433,98 +433,102 @@ _NotEnoughMemoryText::
 	done
 
 _OakSpeechText1::
-	text "Hello there!"
-	line "Welcome to the"
-	cont "world of #MON!"
+	text "Hoi! Welkom"
+	line "in de wereld van"
+	cont "#MON!"
 
-	para "My name is OAK!"
-	line "People call me"
-	cont "the #MON PROF!"
+	para "Mijn naam is OAK!"
+	line "Ze noemen mij de"
+	cont "#MON professor "
 	prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
-	cont "#MON!@"
+	text "We delen deze"
+	line "wereld met wezens"
+	cont "die we #MON"
+	cont "noemen!@"
 	text_end
 
 _OakSpeechText2B::
-	text $51,"For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
+	text $51,"Voor sommigen zijn"
+	line "ze huisdieren."
 
-	para "Myself..."
+	para "Anderen spelen"
+	line "wedstrijden met"
+	cont "#MON."
 
-	para "I study #MON"
-	line "as a profession."
+	para "Wat ik met"
+	line "#MON doe?"
+
+	para "Het bestuderen van"
+	line "#MON is mijn"
+	cont "levenswerk."
 	prompt
 
 _IntroducePlayerText::
-	text "First, what is"
-	line "your name?"
+	text "Allereerst, wat is"
+	line "je naam?"
 	prompt
 
 _IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+	text "Dit is mijn klein-"
+	line "zoon. Hij is je"
+	cont "rivaal, al sinds"
+	cont "je klein was."
 
-	para "...Erm, what is"
-	line "his name again?"
+	para "...Euh, wat is"
+	line "zijn naam ook"
+	cont "alweer?"
 	prompt
 
 _OakSpeechText3::
 	text "<PLAYER>!"
 
-	para "Your very own"
-	line "#MON legend is"
-	cont "about to unfold!"
+	para "Je eigen #MON"
+	line "verhaal gaat nu"
+	cont "van start!"
 
-	para "A world of dreams"
-	line "and adventures"
-	cont "with #MON"
-	cont "awaits! Let's go!"
+	para "Een wereld vol met"
+	line "hoop en avontuur"
+	cont "samen met #MON"
+	cont "wacht op je!"
 	done
 
 _DoYouWantToNicknameText::
-	text "Do you want to"
-	line "give a nickname"
-	cont "to @"
+	text "Wil je @"
 	text_ram wcd6d
-	text "?"
+	line "een bijnaam"
+	cont "geven?"
 	done
 
 _YourNameIsText::
-	text "Right! So your"
-	line "name is <PLAYER>!"
+	text "Oke! Dus je naam"
+	line "is <PLAYER>!"
 	prompt
 
 _HisNameIsText::
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is <RIVAL>!"
+	text "Oh ja, nu weet ik"
+	line "het weer! Zijn"
+	cont "naam is <RIVAL>!"
 	prompt
 
 _WillBeTradedText::
 	text_ram wNameOfPlayerMonToBeTraded
-	text " and"
+	text " en"
 	line "@"
 	text_ram wcd6d
-	text " will"
-	cont "be traded."
+	text " zullen"
+	cont "geruild worden."
 	done
 
 _Colosseum3MonsText::
-	text "You need 3 #MON"
-	line "to fight!"
+	text "Je hebt 3 #MON"
+	line "nodig!"
 	prompt
 
 _ColosseumMewText::
-	text "Sorry, MEW can't"
-	line "attend!"
+	text "Sorry, MEW mag"
+	line "niet meedoen!"
 	prompt
 
 _ColosseumDifferentMonsText::
