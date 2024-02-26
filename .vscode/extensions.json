@@ -1,0 +1,7 @@
+{
+  // List of recommended extensions
+  "recommendations": [
+    "github.vscode-github-actions",
+    "donaldhays.rgbds-z80"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+   // See https://go.microsoft.com/fwlink/?LinkId=733558
+   // for the documentation about the tasks.json format
+   "version": "2.0.0",
+   "tasks": [
+      {
+         "label": "Run custom lint tool",
+         "type": "shell",
+         "command": "python3 _lint/asmlint.py",
+         "group": "test",
+         "problemMatcher": [
+            {
+               "owner": "asmlint",
+               "source": "asmlint",
+               "pattern": [
+                  {
+                     "severity": 8,
+                     "code": 9,
+                     "column": 4,
+                     "file": 2,
+                     "line": 3,
+                     "message": 10,
+                     "endLine": 6,
+                     "endColumn": 7,
+                     "regexp": "^(\\.\\/)([^:]+):(\\d+):(\\d+):(\\((\\d+):(\\d+)\\))?\\s+([^:]+):\\s+\\[([^\\]]+)\\]\\s+(.*)$"
+                  }
+               ]
+            }
+         ],
+         "runOptions": {
+            "runOn": "folderOpen"
+         },
+         "presentation": {
+            "reveal": "always",
+            "revealProblems": "onProblem",
+            "panel": "dedicated",
+            "clear": true,
+         }
+      }
+   ]
+}
