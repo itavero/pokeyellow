@@ -73,7 +73,7 @@ CreditsTextPointers:
 	dw CreditsText_Shoemake
 	dw CreditsText_Osborne
 	dw CreditsText_Translation
-	dw CreditsText_Ogasawara
+	dw CreditsText_Arno
 	dw CreditsText_Iwata
 	dw CreditsText_Izushi2
 	dw CreditsText_Harada2
@@ -90,8 +90,8 @@ CreditsTextPointers:
 	assert_table_length NUM_CRED_STRINGS
 
 CreditsText_Version:
-	db -6, "YELLOW VERSION"
-	next   "    STAFF@"
+	db -6, " GELE VERSIE "
+	next   "    TEAM@"
 CreditsText_Tajiri:
 	db -6, "SATOSHI TAJIRI@"
 CreditsText_Oota:
@@ -149,29 +149,29 @@ CreditsText_Yuda:
 CreditsText_Pokemon:
 	db -3, "#MON@"
 CreditsText_Director:
-	db -3, "DIRECTOR@"
+	db -3, "DIRECTEURR@"
 CreditsText_Programmers:
-	db -5, "PROGRAMMERS@"
+	db -5, "PROGRAMMEURS@"
 CreditsText_CharacterDesign:
-	db -7, "CHARACTER DESIGN@"
+	db -7, "KARAKTERONTWERP@"
 CreditsText_Music:
-	db -2, "MUSIC@"
+	db -2, "MUZIEK@"
 CreditsText_SoundEffects:
-	db -6, "SOUND EFFECTS@"
+	db -6, "GELUIDSEFFECT@"
 CreditsText_GameDesign:
-	db -5, "GAME DESIGN@"
+	db -5, "SPELONTWERP@"
 CreditsText_MonsterDesign:
-	db -6, "MONSTER DESIGN@"
+	db -6, "MONSTER ONTWERP@"
 CreditsText_GameScenario:
-	db -6, "GAME SCENARIO@"
+	db -6, "SPEL SCENARIO@"
 CreditsText_ParametricDesign:
 	db -7, "PARAMETRIC DESIGN@"
 CreditsText_MapDesign:
-	db -4, "MAP DESIGN@"
+	db -4, "KAART ONTWERP@"
 CreditsText_Testing:
 	db -6, "PRODUCT TESTING@"
 CreditsText_SpecialThanks:
-	db -6, "SPECIAL THANKS@"
+	db -6, "BIJZONDERE DANK@"
 CreditsText_Producers:
 	db -4, "PRODUCERS@"
 CreditsText_Producer:
@@ -216,17 +216,17 @@ CreditsText_Fuzii:
 	db -5, "TAKAYA FUZII@"
 CreditsText_Shogakukan:
 	db -4, "SHOGAKUKAN"
-	next   "PRODUCTION@"
+	next   "PRODUCTIE@"
 CreditsText_Ootani:
 	db -5, "IKUE OOTANI@"
 CreditsText_PikachuVoice:
-	db -6, "PIKACHU VOICE@"
+	db -6, "PIKACHU STEM@"
 
 	db -3, "××××××××@"
 CreditsText_USStaff:
-	db -7, "US VERSION STAFF@"
+	db -7, "VS VERSIE TEAM@"
 CreditsText_USCoord:
-	db -7, "US COORDINATION@"
+	db -7, "US COORDINATIE@"
 CreditsText_Tilden:
 	db -5, "GAIL TILDEN@"
 CreditsText_Kawakami:
@@ -238,9 +238,9 @@ CreditsText_Shoemake:
 CreditsText_Osborne:
 	db -5, "SARA OSBORNE@"
 CreditsText_Translation:
-	db -7, "TEXT TRANSLATION@"
-CreditsText_Ogasawara:
-	db -6, "NOB OGASAWARA@"
+	db -7, "TEKSTVERTALING@"
+CreditsText_Arno:
+	db -6, "ARNO MOONEN@"
 CreditsText_Iwata:
 	db -5, "SATORU IWATA@"
 CreditsText_Izushi2:

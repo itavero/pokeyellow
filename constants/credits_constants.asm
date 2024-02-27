@@ -72,7 +72,7 @@
 	const CRED_SHOEMAKE              ; 45
 	const CRED_OSBORNE               ; 46
 	const CRED_TRANSLATION           ; 47
-	const CRED_OGASAWARA             ; 48
+	const CRED_ARNO                  ; 48
 	const CRED_IWATA                 ; 49
 	const CRED_IZUSHI2               ; 4a
 	const CRED_HARADA2               ; 4b

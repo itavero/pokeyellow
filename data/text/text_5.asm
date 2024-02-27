@@ -1,88 +1,88 @@
 _IsEvolvingText::
-	text "What? @"
+	text "Wat? @"
 	text_ram wStringBuffer
 	text_start
-	line "is evolving!"
+	line "evolueert!"
 	done
 
 _FellAsleepText::
-	text "<TARGET>"
-	line "fell asleep!"
+	text "<TARGET> is"
+	line "gaan slapen!"
 	prompt
 
 _AlreadyAsleepText::
-	text "<TARGET>'s"
-	line "already asleep!"
+	text "<TARGET>"
+	line "slaapt al!"
 	prompt
 
 _PoisonedText::
 	text "<TARGET>"
-	line "was poisoned!"
+	line "is vergiftigd!"
 	prompt
 
 _BadlyPoisonedText::
-	text "<TARGET>'s"
-	line "badly poisoned!"
+	text "<TARGET> is"
+	line "erg vergiftigd!"
 	prompt
 
 _BurnedText::
 	text "<TARGET>"
-	line "was burned!"
+	line "is verbrand!"
 	prompt
 
 _FrozenText::
 	text "<TARGET>"
-	line "was frozen solid!"
+	line "is een ijsblokje!"
 	prompt
 
 _FireDefrostedText::
-	text "Fire defrosted"
-	line "<TARGET>!"
+	text "<TARGET>"
+	line "is ontdooid!"
 	prompt
 
 _MonsStatsRoseText::
 	text "<USER>'s"
 	line "@"
 	text_ram wStringBuffer
-	text "@"
+	text "@ is"
 	text_end
 
 _GreatlyRoseText::
-	text "<SCROLL>greatly@"
+	text "<SCROLL>flink@"
 	text_end
 
 _RoseText::
-	text " rose!"
+	text " gestegen!"
 	prompt
 
 _MonsStatsFellText::
 	text "<TARGET>'s"
 	line "@"
 	text_ram wStringBuffer
-	text "@"
+	text "@ is"
 	text_end
 
 _GreatlyFellText::
-	text "<SCROLL>greatly@"
+	text "<SCROLL>flink@"
 	text_end
 
 _FellText::
-	text " fell!"
+	text " gezakt!"
 	prompt
 
 _RanFromBattleText::
 	text "<USER>"
-	line "ran from battle!"
+	line "is gevlucht!"
 	prompt
 
 _RanAwayScaredText::
 	text "<TARGET>"
-	line "ran away scared!"
+	line "is weggerend!"
 	prompt
 
 _WasBlownAwayText::
 	text "<TARGET>"
-	line "was blown away!"
+	line "waait weg!"
 	prompt
 
 _ChargeMoveEffectText::
@@ -92,41 +92,42 @@ _ChargeMoveEffectText::
 _MadeWhirlwindText::
 	text_start
 	line "made a whirlwind!"
+	line "maakt wervelwind!"
 	prompt
 
 _TookInSunlightText::
 	text_start
-	line "took in sunlight!"
+	line "baadt in de zon!"
 	prompt
 
 _LoweredItsHeadText::
 	text_start
-	line "lowered its head!"
+	line "bukt!"
 	prompt
 
 _SkyAttackGlowingText::
 	text_start
-	line "is glowing!"
+	line "straalt!"
 	prompt
 
 _FlewUpHighText::
 	text_start
-	line "flew up high!"
+	line "vliegt omhoog!"
 	prompt
 
 _DugAHoleText::
 	text_start
-	line "dug a hole!"
+	line "graaft een gat!"
 	prompt
 
 _BecameConfusedText::
 	text "<TARGET>"
-	line "became confused!"
+	line "is verward!"
 	prompt
 
 _MimicLearnedMoveText::
 	text "<USER>"
-	line "learned"
+	line "leerde"
 	cont "@"
 	text_ram wcd6d
 	text "!"

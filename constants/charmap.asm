@@ -161,6 +161,7 @@
 	charmap "<PK>",      $e1
 	charmap "<MN>",      $e2
 	charmap "-",         $e3
+	charmap "+",         $e4 ; Added manually, based on pokered disassembly, not sure if correct.
 
 	charmap "'r",        $e4
 	charmap "'m",        $e5

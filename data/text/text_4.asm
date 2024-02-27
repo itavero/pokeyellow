@@ -1,49 +1,51 @@
 _FileDataDestroyedText::
-	text "The file data is"
-	line "destroyed!"
+	text "Opgeslagen voort-"
+	line "gang is beschadigd"
 	prompt
 
 _WouldYouLikeToSaveText::
-	text "Would you like to"
-	line "SAVE the game?"
+	text "Wil je jouw voort-"
+	line "gang opslaan?"
 	done
 
 _SavingText::
-	text "Saving..."
+	text "Bezig met"
+	line "opslaan..."
 	done
 
 _GameSavedText::
-	text "<PLAYER> saved"
-	line "the game!"
+	text "<PLAYER>'s voort-"
+	line "gang is opgeslagen"
 	done
 
 _OlderFileWillBeErasedText::
-	text "The older file"
-	line "will be erased to"
-	cont "save. Okay?"
+	text "Eerder opgeslagen"
+	line "voortgang wordt"
+	cont "overschreven. OK?"
 	done
 
 _WhenYouChangeBoxText::
-	text "When you change a"
-	line "#MON BOX, data"
-	cont "will be saved."
+	text "Wanneer je wisselt"
+	line "van #MON BOX,"
+	cont "wordt je voort-"
+	cont "gang opgeslagen."
 
-	para "Is that okay?"
+	para "Is dat goed?"
 	done
 
 _ChooseABoxText::
-	text "Choose a"
+	text "Kies een"
 	line "<PKMN> BOX.@"
 	text_end
 
 _EvolvedText::
 	text_ram wStringBuffer
-	text " evolved"
+	text " werd"
 	done
 
 _IntoText::
 	text_start
-	line "into @"
+	line "een @"
 	text_ram wcd6d
 	text "!"
 	done
@@ -52,5 +54,6 @@ _StoppedEvolvingText::
 	text "Huh? @"
 	text_ram wStringBuffer
 	text_start
-	line "stopped evolving!"
+	line "is gestopt met"
+	cont "evolueren!"
 	prompt
